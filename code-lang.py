@@ -19,19 +19,19 @@ def decode(word):
 def main():
     while True:
         print("Enter to Code-lang game: \nHere U can encode or decode any statement u want!!! \n\nSimple chose encode to convert your secrets into code language ..... that u want\n\nAnd chose decode to retrieve it back for code language...")
-        choice = input("Enter 1 to encode or 0 to decode: ")
+        choice = input("\nEnter 1 to encode or 0 to decode: ")
         if choice == '1':
-            message = input("Enter message: ")
+            message = input("\nEnter message: ")
             encoded_message = ' '.join(encode(word) for word in message.split())
-            print("Encoded message:", encoded_message)
+            print("\nEncoded message:", encoded_message)
         elif choice == '0':
-            message = input("Enter message: ")
+            message = input("\nEnter message: ")
             decoded_message = ' '.join(decode(word) for word in message.split())
-            print("Decoded message:", decoded_message)
+            print("\nDecoded message:", decoded_message)
         else:
-            print("Wrong choice!")
+            print("\nWrong choice!")
             continue
-        choice = input("Enter 1 to start again or 0 to exit: ")
+        choice = input("\nEnter 1 to start again or 0 to exit: ")
         if choice == '0':
             break
 
